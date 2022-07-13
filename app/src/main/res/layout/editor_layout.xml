@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id = "@+id/EditorLayout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5EBEBB">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="logo"
+            android:textSize="35dp"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/EditorLayout_logo"
+        android:background="#abcedf"
+        android:id="@+id/EditorLayoutRL2">
+
+        <Spinner
+            android:id="@+id/Editor_HairViewSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <com.view.calender.horizontal.umar.horizontalcalendarview.HorizontalCalendarView
+        android:id="@+id/horizontalcalendarview"
+        android:layout_below="@+id/EditorLayoutRL2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/EditorLayoutRL3"
+        android:layout_below="@+id/horizontalcalendarview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#E9E9E9"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="모발 굵기"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="측정x"
+                android:id="@+id/Editor_hairThickness_Textview"/>
+
+            <ImageButton
+                android:id="@+id/Editor_hairThickness"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gallery"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="밀도"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="측정x"
+                android:id="@+id/Editor_hairDensity_Textview"/>
+
+            <ImageButton
+                android:id="@+id/Editor_hairDensity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gallery"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="red dot"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Editor_hairReddot_Textview"
+                android:text="측정x"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                android:id="@+id/Editor_hairReddot"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gallery"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="yellow dot"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Editor_hairYelowdot_Textview"
+                android:text="측정x"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                android:id="@+id/Editor_hairYellowdot"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gallery"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/EditorLayoutRL3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/EditorLayout4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Editor_memo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text = "memo"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Editor_memo_editText"
+            android:background="#E9E9E9"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Button_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/save"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:gravity="center_horizontal|center_vertical"
+           />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

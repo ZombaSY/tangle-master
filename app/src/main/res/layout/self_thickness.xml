@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ThicnknessRL1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/touchImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/hair_photo"
+            android:scaleType="center"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/Ruler_Bar_Left"
+            android:layout_width="3dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ruler_bar" />
+
+        <ImageView
+            android:id="@+id/Ruler_Line"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ruler_line"/>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="190dp"-->
+        <!--android:id="@+id/Ruler_Bar_Right_Layout">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:src="@drawable/ruler_bar"-->
+        <!--android:id="@+id/Ruler_Bar_Right"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:src="@drawable/ruler_bar"-->
+        <!--android:layout_marginLeft="190dp"-->
+        <!--android:id="@+id/Ruler_Bar_Right"/>-->
+
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:id="@+id/Hair_Thickness"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textSize="20sp"
+            android:id="@+id/Delete_Points_Button"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뒤로"
+            android:textSize="20sp"
+            android:id="@+id/Save_Picture_Button"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
